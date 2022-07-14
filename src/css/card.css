@@ -1,0 +1,86 @@
+.card-compras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    width: 100%;
+    /*border:1px solid rgb(221, 220, 220);*/
+    /* padding: 1em 0; */
+    margin-top: 2em;
+}
+
+.cantidadC{
+    padding: 5px 1em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cantidadC .button1{
+    padding: 0px 5px;
+    font-weight: 900;
+    width: 20px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.554);
+    border-radius: 8px 0px 0px 8px;
+    color: var(--colorUno);
+}
+
+.cantidadC .button2{
+    padding: 0px 5px;
+    font-weight: 900;
+    width: 20px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.554);
+    border-radius: 0px 8px 8px 0px;
+    color: var(--colorUno);
+}
+
+.contador{
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 100;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    height: auto;
+    padding: 0 5px 0px 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border:1px solid rgb(221, 220, 220);
+    padding: 1em 0;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-card{
+    padding-left: 14px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: .5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.119);
+}
+
+.card-text{
+    padding: 0 1em;
+    width: 100%;
+    text-align: justify;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.card .btn-id{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    font-size: .7rem;
+}

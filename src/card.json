@@ -1,0 +1,82 @@
+[
+    {
+        "keyL":"a",
+        "src":"./dataImg/deftfs.png",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 1
+    },
+    {
+        "keyL":"b",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 2
+    },
+    {
+        "keyL":"c",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 3
+    },
+    {
+        "keyL":"d",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 4
+    },
+    {
+        "keyL":"e",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 5
+    },
+    {
+        "keyL":"f",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 6
+    },
+    {
+        "keyL":"g",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 7
+    },
+    {
+        "keyL":"h",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 8
+    },
+    {
+        "keyL":"i",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 9
+    },
+    {
+        "keyL":"j",
+        "src":"./dataImg",
+        "titulo":"lorem",
+        "parrafo":"texto de prueva mini descripcion",
+        "state": false,
+        "cId": 10
+    }
+]
