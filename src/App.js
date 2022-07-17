@@ -2,7 +2,7 @@ import Navegacion from './components/Navegacion';
 import './App.css';
 import Logo from  "./dataImg/deftfs.png";
 import PintarCards from './PintarCards.jsx';
-import DataJson from './card.json'
+import DataJson from './card.json';
 
 
 function App() {

@@ -17,8 +17,7 @@ const NavItems = () => {
         }
     ]
 
-    const [claseD, setclaseD] = useState(false)
-
+    const [claseD, setclaseD] = useState(false);
     return(
         <div>
             <ul className={`navCenter ${claseD ? 'navBar__show':''}`}>
