@@ -17,23 +17,23 @@ const NavItems = () => {
         }
     ]
 
-    const [claseD, setclaseD] = useState(false);
+    const [claseD, setclaseD] = useState(true);
     return(
         <div>
-            <ul className={`navCenter ${claseD ? 'navBar__show':''}`}>
+            <ul className={`navbar-nav ${claseD ? 'd-none':''}`}>
                 {objectNav.map(items => {
                     return(
-                    <li key={items.name}>
-                        <a href={items.link}>{items.name}</a>
+                    <li key={items.name} className="nav-item">
+                        <a href={items.link} className="nav-link">{items.name}</a>
                     </li>
                     )
                 })}
             </ul>
-            <i 
+            <button 
             onClick={() => setclaseD(!claseD)}
-            className="icons icons-style"
+            className="btn px-4 mb-2 icons-style"
             >
-            </i>
+            </button>
         </div>
     )
 }

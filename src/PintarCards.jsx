@@ -1,4 +1,3 @@
-// import CardData from "./CardData"
 import img from "./dataImg/deftfs.png"
 import { useState } from "react"
 
@@ -15,35 +14,42 @@ const PintarCards = (props) => {
 
     const Disminuir = () => {
         setContador(contador - 1)
+        if(!contador) {
+            setClassContador(!classContador)
+        }
+    }
+
+    const [classContador, setClassContador ] = useState(true)
+
+    const pintarContador = () => {
+        setClassContador(!classContador)
     }
 
     return(
         dataCard.map((card) => {
             return(
-                <div className="card" key={card.keyL}>
-                    <div className={`cantidadC d-none`}>
+                <div className="card mt-3 mb-3 col-6 col-md-5" key={card.keyL}>
+                    <div className={`cantidadC ${classContador ? "d-none":""}`}>
                         <button 
-                            className="button1"
+                            className="btn btn-danger"
                             onClick={() => Disminuir()}
                         >-</button>
-                        <p className="contador">{contador}</p>
+                        <p className="lead mt-3 mx-2">{contador}</p>
                         <button 
-                            className="button2"
+                            className="btn btn-success"
                             onClick={() => Aumentar()}
                         >+</button>
                     </div>
-                    <img src={img} className="card-img" alt="" />
-                    <div className="card-content">
-                        <h3 className="title-card">{card.titulo}</h3>
+                    <img src={img} className="card-img-top" alt="" />
+                    <div className="card-body">
+                        <h5 className="card-title">{card.titulo}</h5>
                         <p className="card-text">{card.parrafo}</p>
                         <button
                             type="button"
-                            className="btn btn-id"
-                            onClick={() => {
-                                console.log('click')
-                            }}
+                            className="btn btn-outline-dark mb-3 w-100"
+                            onClick={pintarContador}
                         >
-                            agregar al carrito
+                            agregar al carrito ❤️
                         </button>
                     </div>
                 </div>
@@ -51,20 +57,7 @@ const PintarCards = (props) => {
         })
         
     )
-    // const getUrls = "https://jsonplaceholder.typicode.com/posts"
 
-    // window.addEventListener('DOMContentLoaded', () => (JsonAsync()))
-
-    // const JsonAsync = async () => {
-    //     try {
-    //         const cards = await fetch(getUrls)
-    //         const dataCrads = await cards.json()
-    //         CardData(dataCrads)
-
-    //     } catch (error) {
-    //             console.log(error)
-    //     }
-    // }
 }
 
 export default PintarCards

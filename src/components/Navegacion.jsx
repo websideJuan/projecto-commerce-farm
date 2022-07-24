@@ -1,16 +1,13 @@
 import NavItems from "./NavItems.jsx"
-import ImputSearch from "./ImputSearch"
 
 
 const Navegacion = (props) => {
     return(
-        <nav className="navBar">
+        <nav className="navbar flex-column">
             <div className="img">
                 <img src={props.logo} alt="..." />
             </div>
-            <ImputSearch />
             <NavItems /> 
-            
         </nav>
     )
 }

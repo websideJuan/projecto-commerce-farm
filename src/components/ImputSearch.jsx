@@ -2,7 +2,7 @@ const ImputSearch = () => {
     return(
         <input 
             type="search" 
-            className="search"
+            className="form-control"
             name="search"
             autoFocus
             placeholder="Buscar"
